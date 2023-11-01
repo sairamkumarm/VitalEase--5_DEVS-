@@ -2,4 +2,4 @@
 	import { Avatar } from "@skeletonlabs/skeleton";
 
 </script>
-<Avatar/>
+<Avatar/> User Name
