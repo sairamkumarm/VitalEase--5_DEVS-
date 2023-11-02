@@ -11,7 +11,7 @@
 	];
 </script>
 
-<div id="bottom" class="Footer w-screen bg-secondary-500 bottom-0 right-0 left-0">
+<div id="bottom" class="Footer w-screen bg-secondary-500 bottom-0 right-0 left-0 ">
 	<div class="Inner-Footer">
 		<div class="Info">
 			<div class="info">
