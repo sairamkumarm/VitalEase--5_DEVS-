@@ -5,12 +5,12 @@
 <div class="header-container fixed top-0 right-0 left-0 bg-[#585858]/20 h-16 z-50">
 	<div class="header-content flex items-center justify-between p-2 pl-2">
 		<div class="title-container">
-			<button class="btn h3 text-white">VitalEase</button>
+			<a href="/" class="btn h3 text-white">VitalEase</a>
 		</div>
 		<div class="action-container text-white flex justify-between items-center gap-5">
 			<a href="/" class="btn">Home</a>
 			<a href="/dashboard" class="btn">Dashboard</a>
-			<a href="/about" class="btn">About</a>
+			<a href="#bottom" class="btn scroll-smooth">About</a>
 			<a href="/emergency" class="btn variant-filled-error">Emergency</a>
 			<a href="/profile">
                 <Avatar
