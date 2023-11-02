@@ -9,7 +9,7 @@
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
 	import { cubicInOut } from 'svelte/easing';
-	import Chatbot from './Chatbot.svelte'
+	import Chatbot from './Chatbot.svelte';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 
 	let botActive: boolean = false;
@@ -17,7 +17,7 @@
 	const handleClick = (): void => {
 		botActive = !botActive;
 		console.log(botActive);
-	}
+	};
 </script>
 
 <Header />{#key data.url}
@@ -27,11 +27,19 @@
 		class="w-screen"
 	>
 		<slot />
-		
 	</div>
 {/key}
 {#if botActive}
-	<Chatbot/>
+	<Chatbot />
 {/if}
-<div class="bot" on:click={handleClick}><img src="assets/chatbot.svg" class="fixed -bottom-4 -right-5" alt="chatbot image" style="cursor: pointer;"></div> 
+<!-- svelte-ignore a11y-img-redundant-alt -->
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<div class="bot" on:click={handleClick}>
+	<img
+		src="assets/chatbot.svg"
+		class="fixed -bottom-7 -right-5 scale-[0.75] cursor-pointer"
+		alt="chatbot image"
+	/>
+</div>
 <Footer />
