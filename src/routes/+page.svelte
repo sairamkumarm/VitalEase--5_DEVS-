@@ -11,6 +11,7 @@
 				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
 			</li>
 			<li>Roopsagar's commit 1</li>
+			<li>Roopsagar's commit 2</li>
 		</ul>
 	</div>
 </div>
