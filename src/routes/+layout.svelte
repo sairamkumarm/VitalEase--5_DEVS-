@@ -38,8 +38,9 @@
 <div class="bot" on:click={handleClick}>
 	<img
 		src="assets/chatbot.svg"
-		class="fixed -bottom-7 -right-5 scale-[0.75] cursor-pointer"
+		class="fixed bottom-5 right-5 scale-[0.75] cursor-pointer fill-secondary-500"
 		alt="chatbot image"
+		style="filter:drop-shadow( 0px 0px 32px #0fb880);"
 	/>
 </div>
 <Footer />
