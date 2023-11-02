@@ -80,7 +80,7 @@
 <div class="w-screen banner relative h-52 bg-secondary-500">
 	<div class="fixed top-0 right-0 left-0 bg-secondary-500 h-16 z-10"></div>
 	<div class="Profile-Div">
-	<Avatar width="w-40" padding = "10px"/>
+	<Avatar initials="SK" background="bg-primary-500" width="w-40" padding = "10px"/>
 	<div class="Profile-Inner-Div">
 		<h1 class="name">Sampath Kumar , 67</h1>
 		<p class="patient-details">No 39, chruch street ,mentoplushalli, Bengaluru-49<br>Phone No: (088) 09998823<br>E-mail: emailaddress@gmail.com<br>Blood Group: AB -ve | Height: 5’ 6” | Weight: 62 Kgs<br></p>
