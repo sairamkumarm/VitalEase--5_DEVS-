@@ -10,7 +10,9 @@
 			<li>
 				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
 			</li>
-			<li>Sairam's first commit</li>
+			<li>Roopsagar's commit 1</li>
+			<li>Roopsagar's commit 2</li>
+			<li>Sairam's second commit</li>
 		</ul>
 	</div>
 </div>
