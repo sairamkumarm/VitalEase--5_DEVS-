@@ -6,6 +6,7 @@
     let FooterArray2: string[] = ["Emergency Contacts", "Pharamacy", "Planner", "Appointments", "Lab Reports"]
 </script>
 
+<<<<<<< HEAD
 <div class="Footer w-screen bg-secondary-500 bottom-0 right-0 left-0 fixed">
 <div class="Inner-Footer">
 <div class="Info">
@@ -172,3 +173,9 @@
     }
 
 </style>
+=======
+<div class="grid-cols-2 w-screen bg-secondary-500 bottom-0 right-0 left-0 ">
+<div class="info">sdf</div>
+<div class="details">sdf</div>
+</div>
+>>>>>>> 6975b4f1e09303fdd4a93ae0b51ac6b22c450160
