@@ -24,6 +24,7 @@
 	<div
 		in:fly={{ y: 200, duration: 300, delay: 299, easing: cubicInOut }}
 		out:fly={{ y: -200, duration: 300, easing: cubicInOut }}
+		class="w-screen"
 	>
 		<slot />
 		

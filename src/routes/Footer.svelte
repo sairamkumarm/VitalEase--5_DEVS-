@@ -11,7 +11,7 @@
 	];
 </script>
 
-<div class="Footer w-screen bg-secondary-500 bottom-0 right-0 left-0">
+<div id="bottom" class="Footer w-screen bg-secondary-500 bottom-0 right-0 left-0">
 	<div class="Inner-Footer">
 		<div class="Info">
 			<div class="info">
@@ -122,7 +122,6 @@
 		justify-content: center;
 		margin: 10px 0px;
 	}
-	
 
 	.Inner-Footer {
 		display: grid;
@@ -144,6 +143,4 @@
 		padding-left: 20px;
 		padding-top: 0px;
 	}
-
-	
 </style>
