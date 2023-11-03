@@ -37,6 +37,11 @@ The website has been created with elderly users in mind, that means
 ![image](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/dcd2273b-789e-427d-a553-363c30ec5ae8)
 ### Emergency
 - The Emergency page is yet another star feature that automatically contacts nearby authorities and notifies all emergency contacts and caregiver, it also has a section to describe symptoms of the emergency based on the user's history of ailments
+![CopyQ vJFJdz](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/c0e858c8-d2ec-45db-84c1-5afbfbc7cb6d)
+### Chatbot
+- Our webpage also includes a chatbot to help people find information without having to navigate the actual website, this can be crucial to save time and also brings about a conversational element to the interface, this takes advantage of the fact that people can relate better the things that are familiar to them
+
+![CopyQ qrSUsS](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/50fb574a-ed5f-49da-8da0-e0012c3a385b)
 
  
 ## Links
