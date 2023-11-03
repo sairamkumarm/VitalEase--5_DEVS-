@@ -49,5 +49,5 @@ The website has been created with elderly users in mind, that means
 |--|--|
 | Designs and wireframes | [![\[](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/cdcf1503-5d77-4197-8ef2-d4ecdc06039e)](https://www.figma.com/proto/ASL6X0B0ai9julycBlWG3D/Designs?node-id=1281-157&scaling=scale-down&page-id=1202:133&starting-point-node-id=1281:157&mode=design&t=JwYUw3ZGOojbpHeY-1) |
 | User flow diagram | [![flowmapp-seeklogo com](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/802cca8b-219f-48d5-9dab-46a7c351e0c8)](https://app.flowmapp.com/share/projects/11be235f-f6e3-4fa0-88f5-6127af1a72b3/userflow/8e3ebf9e-5309-4f20-8373-c445f61420f9)
-|Figma Prototype |[![Figma (1)](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/0f4e55ae-0909-460a-9295-33379b39da91)](https://www.figma.com/file/ASL6X0B0ai9julycBlWG3D/Designs?type=design&node-id=1281:157&mode=design&t=n57fy1Dzhhmim9Sq-1)|
+|Figma Prototype |[![Figma (1)](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/cdcf1503-5d77-4197-8ef2-d4ecdc06039e)](https://www.figma.com/file/ASL6X0B0ai9julycBlWG3D/Designs?type=design&node-id=1281:157&mode=design&t=n57fy1Dzhhmim9Sq-1)|
 
