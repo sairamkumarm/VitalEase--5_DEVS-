@@ -12,6 +12,8 @@ Created by 5_DEVS, a team consisting of, well … 5 devs
 
 VitalEase is a startup that connects patients with healthcare providers seamlessly, it allows for easy access to appointments with doctors and medication on the go. It is especially useful for elderly patients who need extra care. In an age where everyone has access to the web, VitalEase provides an additional **layer of care** by simplifying the communication between all parties involved.
 
+https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/107497296/71865166-33a3-4b85-b9a8-1482a94f140d
+
 
 ## Design
 
