@@ -41,7 +41,7 @@ The website has been created with elderly users in mind, that means
 ### Chatbot
 - Our webpage also includes a chatbot to help people find information without having to navigate the actual website, this can be crucial to save time and also brings about a conversational element to the interface, this takes advantage of the fact that people can relate better the things that are familiar to them
 
-![CopyQ qrSUsS](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/50fb574a-ed5f-49da-8da0-e0012c3a385b)
+![CopyQ kfsUwa](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/853b206e-2e7d-4076-9875-cddf56d33ac9)
 
  
 ## Links
