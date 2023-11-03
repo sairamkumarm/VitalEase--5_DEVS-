@@ -140,7 +140,7 @@
 					<svelte:fragment slot="summary"><p class="font-bold">{faq[0].question}</p></svelte:fragment>
 					<svelte:fragment slot="content">{faq[0].answer}</svelte:fragment>
 				</AccordionItem>
-				{#each faq.slice(0) as item}
+				{#each faq.slice(1) as item}
 					<AccordionItem>
 						<svelte:fragment slot="summary"><p class="font-bold">{item.question}</p></svelte:fragment>
 						<svelte:fragment slot="content">{item.answer}</svelte:fragment>

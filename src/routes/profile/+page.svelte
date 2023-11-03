@@ -27,7 +27,7 @@
 
 		{
 			date: '11 - 09 - 22',
-			name: 'Dr Emma watson',
+			name: 'Dr Catherine watson',
 			reason: 'Heart Checkup Done',
 			address: 'Peenya',
 			status: 'Regular Checkup Done'
@@ -81,15 +81,15 @@
 	const callerData: { name: string; address: string }[] = [
 		{
 			name: 'Vanamuthu V',
-			address: "123 Elm Street, Springfield, IL 62701, USA"
+			address: '123 Elm Street, Springfield, IL 62701, USA'
 		},
 		{
 			name: 'Shashmith S',
-			address: "456 Maple Avenue, Toronto, ON M5H 2N2, Canada"
+			address: '456 Maple Avenue, Toronto, ON M5H 2N2, Canada'
 		},
 		{
 			name: 'Sairamkumar M',
-			address: "789 Oak Lane, London W1K 7DD, United Kingdom"
+			address: '789 Oak Lane, London W1K 7DD, United Kingdom'
 		}
 	];
 </script>
@@ -109,26 +109,33 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="card mt-40 ml-10 mr-10 mb-10 bg-primary-500 relative">
+	<div class="h2 text-secondary-500 mt-40 pl-20 p-2 font-bold">Caregivers</div>
+	<div class="card ml-10 mr-10 mb-10 bg-primary-500 relative">
 		<dl class="list-dl bg-secondary-500 rounded-md m-32 mt-9 absolute">
 			{#each callerData as caller}
-				<!-- content here -->
-				<div>
-					<span class="badge"><Avatar width="w-14" initials={caller.name} background="bg-primary-500" fill="bg-secondary-500"/></span>
-					<span class="flex-auto">
-						<dt><h3 class="h3 font-bold">{caller.name}</h3></dt>
-						<dd>{caller.address}</dd>
-					</span>
-					<div class="Call-Div">
-						<img src="assets/call.svg" class="cursor-pointer" alt="call" />
-						<img src="assets/video.svg" class="cursor-pointer" alt="videocall" />
-						<img src="assets/message.svg" class="cursor-pointer" alt="videocall" />
-					</div>
+			<div>
+				<span class="badge"
+				><Avatar
+				width="w-14"
+				initials={caller.name}
+				background="bg-primary-500"
+				fill="bg-secondary-500"
+				/></span
+				>
+				<span class="flex-auto">
+					<dt><h3 class="h3 font-bold">{caller.name}</h3></dt>
+					<dd>{caller.address}</dd>
+				</span>
+				<div class="Call-Div">
+					<img src="assets/call.svg" class="cursor-pointer" alt="call" />
+					<img src="assets/video.svg" class="cursor-pointer" alt="videocall" />
+					<img src="assets/message.svg" class="cursor-pointer" alt="videocall" />
 				</div>
+			</div>
 			{/each}
 		</dl>
 	</div>
+	<div class="h2 text-secondary-500  pl-20 font-bold">Appointment history</div>
 	<!-- Responsive Container (recommended) -->
 	<div class="table-container w-11/12 text-black mt-10 mb-20 ml-16 mr-5">
 		<!-- Native Table Element -->
