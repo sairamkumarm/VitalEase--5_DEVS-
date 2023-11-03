@@ -9,7 +9,15 @@
 	import Header from './Header.svelte';
 	import Footer from './Footer.svelte';
 	import { cubicInOut } from 'svelte/easing';
+	import Chatbot from './Chatbot.svelte'
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	let botActive: boolean = false;
+
+	const handleClick = (): void => {
+		botActive = !botActive;
+		console.log(botActive);
+	}
 </script>
 
 <Header />{#key data.url}
@@ -18,6 +26,11 @@
 		out:fly={{ y: -200, duration: 300, easing: cubicInOut }}
 	>
 		<slot />
+		
 	</div>
 {/key}
+{#if botActive}
+	<Chatbot/>
+{/if}
+<div class="bot" on:click={handleClick}><img src="assets/chatbot.svg" class="fixed -bottom-4 -right-5" alt="chatbot image"></div> 
 <Footer />
