@@ -1,237 +1,222 @@
 <script lang="ts">
-	import { Avatar } from "@skeletonlabs/skeleton";
+	import { Avatar } from '@skeletonlabs/skeleton';
 	import { Paginator } from '@skeletonlabs/skeleton';
 
+	let patientHistory: {
+		date: string;
+		name: string;
+		reason: string;
+		address: string;
+		status: string;
+	}[] = [
+		{
+			date: '17 - 10 - 23',
+			name: 'Dr Angela',
+			reason: 'Heart Checkup',
+			address: 'Peenya 3rd Stage',
+			status: 'Regular Checkup Done'
+		},
 
-		let patientHistory : { date: string; name: string; reason: string; address: string; status: string}[] = [
-			{
-				date : "17 - 10 - 23",
-				name : "Dr Angela",
-				reason : "Heart Checkup",
-				address : "Peenya 3rd Stage",
-				status : "Regular Checkup Done"
-			},
-			
-			{
-				date : "25 - 09 - 23",
-				name : "Dr Kosaksi Pasapugazh",
-				reason : "Common Cold",
-				address : "Rajajinagar",
-				status : "Cured"
-			},
+		{
+			date: '25 - 09 - 23',
+			name: 'Dr Kosaksi Pasapugazh',
+			reason: 'Common Cold',
+			address: 'Rajajinagar',
+			status: 'Cured'
+		},
 
-			{
-				date : "11 - 09 - 22",
-				name : "Dr Emma watson",
-				reason : "Heart Checkup Done",
-				address : "Peenya",
-				status : "Regular Checkup Done"
-			},
-			{
-				date : "17 - 10 - 23",
-				name : "Dr Angela",
-				reason : "Heart Checkup",
-				address : "Peenya 3rd Stage",
-				status : "Regular Checkup Done"
-			},
-			
-			{
-				date : "25 - 09 - 23",
-				name : "Dr David",
-				reason : "Common Cold",
-				address : "Rajajinagar",
-				status : "Cured"
-			},
+		{
+			date: '11 - 09 - 22',
+			name: 'Dr Emma watson',
+			reason: 'Heart Checkup Done',
+			address: 'Peenya',
+			status: 'Regular Checkup Done'
+		},
+		{
+			date: '17 - 10 - 23',
+			name: 'Dr Angela',
+			reason: 'Heart Checkup',
+			address: 'Peenya 3rd Stage',
+			status: 'Regular Checkup Done'
+		},
 
-			{
-				date : "02 - 07 - 23",
-				name : "Dr Thomas",
-				reason : "Diabetic Checkup",
-				address : "Basaweshwara Nagar",
-				status : "Regular Checkup Done"
-			},
+		{
+			date: '25 - 09 - 23',
+			name: 'Dr David',
+			reason: 'Common Cold',
+			address: 'Rajajinagar',
+			status: 'Cured'
+		},
 
-			{
-				date : "27 - 02 - 23",
-				name : "Dr Victoria",
-				reason : "High Fever",
-				address : "Hebbal",
-				status : "Cured"
-			},
-			{
-				date : "27 - 02 - 23",
-				name : "Dr Cathalien",
-				reason : "High Fever",
-				address : "Hebbal",
-				status : "Cured"
-			}
-		]
+		{
+			date: '02 - 07 - 23',
+			name: 'Dr Thomas',
+			reason: 'Diabetic Checkup',
+			address: 'Basaweshwara Nagar',
+			status: 'Regular Checkup Done'
+		},
 
-	
-		let paginationSettings = {
-			page: 0,
-			limit: 5,
-			size: patientHistory.length,
-			amounts: [1,2,5,10],
-		};
-					
+		{
+			date: '27 - 02 - 23',
+			name: 'Dr Victoria',
+			reason: 'High Fever',
+			address: 'Hebbal',
+			status: 'Cured'
+		},
+		{
+			date: '27 - 02 - 23',
+			name: 'Dr Cathalien',
+			reason: 'High Fever',
+			address: 'Hebbal',
+			status: 'Cured'
+		}
+	];
+
+	let paginationSettings = {
+		page: 0,
+		limit: 5,
+		size: patientHistory.length,
+		amounts: [1, 2, 5, 10]
+	};
+	const callerData: { name: string; address: string }[] = [
+		{
+			name: 'Vanamuthu V',
+			address: "123 Elm Street, Springfield, IL 62701, USA"
+		},
+		{
+			name: 'Shashmith S',
+			address: "456 Maple Avenue, Toronto, ON M5H 2N2, Canada"
+		},
+		{
+			name: 'Sairamkumar M',
+			address: "789 Oak Lane, London W1K 7DD, United Kingdom"
+		}
+	];
 </script>
-<div class="w-screen ctinr bg-white text-white">
-<div class="w-screen banner relative h-52 bg-secondary-500">
-	<div class="fixed top-0 right-0 left-0 bg-secondary-500 h-16 z-10"></div>
-	<div class="Profile-Div">
-	<Avatar initials="SK" background="bg-primary-500" width="w-40" padding = "10px"/>
-	<div class="Profile-Inner-Div">
-		<h1 class="name">Sampath Kumar , 67</h1>
-		<p class="patient-details">No 39, chruch street ,mentoplushalli, Bengaluru-49<br>Phone No: (088) 09998823<br>E-mail: emailaddress@gmail.com<br>Blood Group: AB -ve | Height: 5’ 6” | Weight: 62 Kgs<br></p>
-	</div>
-</div>	
-</div>
 
-<div class="card mt-40 ml-10 mr-10 mb-10 bg-primary-500 relative">
-	<dl class="list-dl bg-secondary-500 rounded-md m-32 mt-9 absolute">
-		<div>
-			<span class="badge"><Avatar width="w-14"/></span>
-			<span class="flex-auto">
-				<dt><h3 class="h3 font-bold">Vanamuthu V</h3></dt>
-				<dd>No 88, Example Address, state-7##</dd>
-			</span>
-			<div class="Call-Div">
-			<svg style="cursor: pointer;"  width="32" height="34" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M33.6539 35.9997C31.8236 35.9997 29.2524 35.4324 25.4022 33.5889C20.7203 31.3389 17.099 29.2617 12.4424 25.2815C7.95273 21.4364 5.76791 18.9469 2.7101 14.1784C-0.744358 8.79445 -0.155488 5.97227 0.502771 4.7661C1.28668 3.32447 2.44379 2.46223 3.93941 1.60642C4.78891 1.12944 5.6879 0.720563 6.62496 0.384973C6.71873 0.350419 6.80594 0.317473 6.88376 0.28774C7.34792 0.108541 8.05119 -0.162265 8.942 0.127024C9.53649 0.318276 10.0672 0.70962 10.898 1.41275C12.6018 2.85277 14.9301 6.05986 15.789 7.63488C16.3657 8.69641 16.7473 9.39714 16.7483 10.183C16.7483 11.1031 16.2082 11.8127 15.5527 12.5785C15.4299 12.7224 15.308 12.8598 15.1898 12.9932C14.4763 13.7967 14.3197 14.029 14.4228 14.4436C14.6319 15.2769 16.1913 17.7576 18.754 19.949C21.3167 22.1403 24.1279 23.3923 25.1041 23.5707C25.6085 23.6631 25.8851 23.5233 26.8528 22.8901C26.9916 22.7993 27.1342 22.7052 27.2832 22.6112C28.2828 21.974 29.0724 21.5232 30.1207 21.5232H30.1263C31.0387 21.5232 31.8198 21.8623 33.1138 22.4216C34.8017 23.1512 38.6565 25.1208 40.3472 26.5825C41.1695 27.2929 41.6281 27.7461 41.8522 28.2548C42.1897 29.0206 41.8719 29.6209 41.6646 30.0227C41.6299 30.0893 41.5915 30.1625 41.5512 30.2436C41.1565 31.0452 40.6765 31.814 40.1174 32.5403C39.1207 33.818 38.1108 34.8072 36.4248 35.4798C35.5591 35.8307 34.6116 36.0085 33.6539 35.9997Z" fill="white"/>
-			</svg>
-			<svg style="cursor: pointer;"  width="40" height="42" viewBox="0 0 62 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M21.8689 0.75293C6.9256 0.75293 0.699219 2.6907 0.699219 4.25426V30.5465C0.699219 32.0743 6.9256 34.1217 21.8689 34.1217C36.8123 34.1217 43.0386 32.1839 43.0386 30.6203V4.32815C43.0386 2.80034 36.8123 0.75293 21.8689 0.75293ZM63.897 0.826818C63.4784 0.842785 63.0733 0.97259 62.729 1.20102L46.5404 11.1807C45.9177 11.6288 45.5292 12.3676 45.5292 13.1184V21.7562C45.5292 22.507 45.9177 23.2435 46.5404 23.6939L62.729 33.676C63.1673 33.993 65.2992 34.9869 65.2992 31.7382V3.13641C65.2992 1.26061 64.6243 0.798216 63.897 0.826818Z" fill="white"/>
-			</svg>
-			<svg style="cursor: pointer;"  width="32" height="34" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M36 0.87793H4C2.93913 0.87793 1.92172 1.24796 1.17157 1.90663C0.421427 2.56529 0 3.45863 0 4.39012V35.9999L8 28.9755H36C37.0609 28.9755 38.0783 28.6055 38.8284 27.9468C39.5786 27.2881 40 26.3948 40 25.4633V4.39012C40 3.45863 39.5786 2.56529 38.8284 1.90663C38.0783 1.24796 37.0609 0.87793 36 0.87793Z" fill="white"/>
-			</svg>
+<div class="w-screen ctinr bg-white text-white">
+	<div class="w-screen banner relative h-52 bg-secondary-500">
+		<div class="fixed top-0 right-0 left-0 bg-secondary-500 h-16 z-10" />
+		<div class="Profile-Div">
+			<Avatar initials="SK" background="bg-primary-500" width="w-40" padding="10px" />
+			<div class="Profile-Inner-Div">
+				<h1 class="name">Sampath Kumar , 67</h1>
+				<p class="patient-details text-lg">
+					No 39, chruch street ,mentoplushalli, Bengaluru-49<br />Phone No: (088) 09998823<br
+					/>E-mail: emailaddress@gmail.com<br />Blood Group: AB -ve | Height: 5’ 6” | Weight: 62 Kgs<br
+					/>
+				</p>
 			</div>
 		</div>
-		<div>
-			<span class="badge"><Avatar width="w-14"/></span>
-			<span class="flex-auto">
-				<dt><h3 class="h3 font-bold">Shashmith S</dt>
-				<dd>No 88, Example Address, state-7##</dd>
-			</span>
-			<div class="Call-Div">
-			<svg style="cursor: pointer;"  width="32" height="34" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M33.6539 35.9997C31.8236 35.9997 29.2524 35.4324 25.4022 33.5889C20.7203 31.3389 17.099 29.2617 12.4424 25.2815C7.95273 21.4364 5.76791 18.9469 2.7101 14.1784C-0.744358 8.79445 -0.155488 5.97227 0.502771 4.7661C1.28668 3.32447 2.44379 2.46223 3.93941 1.60642C4.78891 1.12944 5.6879 0.720563 6.62496 0.384973C6.71873 0.350419 6.80594 0.317473 6.88376 0.28774C7.34792 0.108541 8.05119 -0.162265 8.942 0.127024C9.53649 0.318276 10.0672 0.70962 10.898 1.41275C12.6018 2.85277 14.9301 6.05986 15.789 7.63488C16.3657 8.69641 16.7473 9.39714 16.7483 10.183C16.7483 11.1031 16.2082 11.8127 15.5527 12.5785C15.4299 12.7224 15.308 12.8598 15.1898 12.9932C14.4763 13.7967 14.3197 14.029 14.4228 14.4436C14.6319 15.2769 16.1913 17.7576 18.754 19.949C21.3167 22.1403 24.1279 23.3923 25.1041 23.5707C25.6085 23.6631 25.8851 23.5233 26.8528 22.8901C26.9916 22.7993 27.1342 22.7052 27.2832 22.6112C28.2828 21.974 29.0724 21.5232 30.1207 21.5232H30.1263C31.0387 21.5232 31.8198 21.8623 33.1138 22.4216C34.8017 23.1512 38.6565 25.1208 40.3472 26.5825C41.1695 27.2929 41.6281 27.7461 41.8522 28.2548C42.1897 29.0206 41.8719 29.6209 41.6646 30.0227C41.6299 30.0893 41.5915 30.1625 41.5512 30.2436C41.1565 31.0452 40.6765 31.814 40.1174 32.5403C39.1207 33.818 38.1108 34.8072 36.4248 35.4798C35.5591 35.8307 34.6116 36.0085 33.6539 35.9997Z" fill="white"/>
-			</svg>
-			<svg style="cursor: pointer;"  width="40" height="42" viewBox="0 0 62 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M21.8689 0.75293C6.9256 0.75293 0.699219 2.6907 0.699219 4.25426V30.5465C0.699219 32.0743 6.9256 34.1217 21.8689 34.1217C36.8123 34.1217 43.0386 32.1839 43.0386 30.6203V4.32815C43.0386 2.80034 36.8123 0.75293 21.8689 0.75293ZM63.897 0.826818C63.4784 0.842785 63.0733 0.97259 62.729 1.20102L46.5404 11.1807C45.9177 11.6288 45.5292 12.3676 45.5292 13.1184V21.7562C45.5292 22.507 45.9177 23.2435 46.5404 23.6939L62.729 33.676C63.1673 33.993 65.2992 34.9869 65.2992 31.7382V3.13641C65.2992 1.26061 64.6243 0.798216 63.897 0.826818Z" fill="white"/>
-			</svg>
-			<svg style="cursor: pointer;"  width="32" height="34" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M36 0.87793H4C2.93913 0.87793 1.92172 1.24796 1.17157 1.90663C0.421427 2.56529 0 3.45863 0 4.39012V35.9999L8 28.9755H36C37.0609 28.9755 38.0783 28.6055 38.8284 27.9468C39.5786 27.2881 40 26.3948 40 25.4633V4.39012C40 3.45863 39.5786 2.56529 38.8284 1.90663C38.0783 1.24796 37.0609 0.87793 36 0.87793Z" fill="white"/>
-			</svg>
-			</div>
-				
-		</div>
-		<div>
-			<span class="badge"><Avatar width="w-14"/></span>
-			<span class="flex-auto">
-				<dt><h3 class="h3 font-bold">Sairamkumar M</dt>
-				<dd>No 88, Example Address, state-7##</dd>
-			</span>
-			<div class="Call-Div">
-				<svg style="cursor: pointer;"  width="32" height="34" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M33.6539 35.9997C31.8236 35.9997 29.2524 35.4324 25.4022 33.5889C20.7203 31.3389 17.099 29.2617 12.4424 25.2815C7.95273 21.4364 5.76791 18.9469 2.7101 14.1784C-0.744358 8.79445 -0.155488 5.97227 0.502771 4.7661C1.28668 3.32447 2.44379 2.46223 3.93941 1.60642C4.78891 1.12944 5.6879 0.720563 6.62496 0.384973C6.71873 0.350419 6.80594 0.317473 6.88376 0.28774C7.34792 0.108541 8.05119 -0.162265 8.942 0.127024C9.53649 0.318276 10.0672 0.70962 10.898 1.41275C12.6018 2.85277 14.9301 6.05986 15.789 7.63488C16.3657 8.69641 16.7473 9.39714 16.7483 10.183C16.7483 11.1031 16.2082 11.8127 15.5527 12.5785C15.4299 12.7224 15.308 12.8598 15.1898 12.9932C14.4763 13.7967 14.3197 14.029 14.4228 14.4436C14.6319 15.2769 16.1913 17.7576 18.754 19.949C21.3167 22.1403 24.1279 23.3923 25.1041 23.5707C25.6085 23.6631 25.8851 23.5233 26.8528 22.8901C26.9916 22.7993 27.1342 22.7052 27.2832 22.6112C28.2828 21.974 29.0724 21.5232 30.1207 21.5232H30.1263C31.0387 21.5232 31.8198 21.8623 33.1138 22.4216C34.8017 23.1512 38.6565 25.1208 40.3472 26.5825C41.1695 27.2929 41.6281 27.7461 41.8522 28.2548C42.1897 29.0206 41.8719 29.6209 41.6646 30.0227C41.6299 30.0893 41.5915 30.1625 41.5512 30.2436C41.1565 31.0452 40.6765 31.814 40.1174 32.5403C39.1207 33.818 38.1108 34.8072 36.4248 35.4798C35.5591 35.8307 34.6116 36.0085 33.6539 35.9997Z" fill="white"/>
-			</svg>
-			<svg style="cursor: pointer;"  width="40" height="42" viewBox="0 0 62 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M21.8689 0.75293C6.9256 0.75293 0.699219 2.6907 0.699219 4.25426V30.5465C0.699219 32.0743 6.9256 34.1217 21.8689 34.1217C36.8123 34.1217 43.0386 32.1839 43.0386 30.6203V4.32815C43.0386 2.80034 36.8123 0.75293 21.8689 0.75293ZM63.897 0.826818C63.4784 0.842785 63.0733 0.97259 62.729 1.20102L46.5404 11.1807C45.9177 11.6288 45.5292 12.3676 45.5292 13.1184V21.7562C45.5292 22.507 45.9177 23.2435 46.5404 23.6939L62.729 33.676C63.1673 33.993 65.2992 34.9869 65.2992 31.7382V3.13641C65.2992 1.26061 64.6243 0.798216 63.897 0.826818Z" fill="white"/>
-			</svg>
-			<svg style="cursor: pointer;"  width="32" height="34" viewBox="0 0 42 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M36 0.87793H4C2.93913 0.87793 1.92172 1.24796 1.17157 1.90663C0.421427 2.56529 0 3.45863 0 4.39012V35.9999L8 28.9755H36C37.0609 28.9755 38.0783 28.6055 38.8284 27.9468C39.5786 27.2881 40 26.3948 40 25.4633V4.39012C40 3.45863 39.5786 2.56529 38.8284 1.90663C38.0783 1.24796 37.0609 0.87793 36 0.87793Z" fill="white"/>
-			</svg>
-		</div>
-		</div>
-	</dl>
-</div>
-<!-- Responsive Container (recommended) -->
-<div class="table-container w-11/12 text-black mt-10 mb-20 ml-16 mr-5">
-	<!-- Native Table Element -->
-	<table class="table table-hover">
-		<thead>
-			<tr>
-				<th>Date</th>
-				<th>Name</th>
-				<th>Reason</th>
-				<th>Address</th>
-				<th>Status</th>
-			</tr>
-		</thead>
-		<tbody>
-			{#each patientHistory as row}
-				<tr>
-					<td>{row.date}</td>
-					<td>{row.name}</td>
-					<td>{row.reason}</td>
-					<td>{row.address}</td>
-					<td>{row.status}</td>
-				</tr>
-			{/each}
-		</tbody>
-	</table>
-	<div class="paginator mt-6"><Paginator 
-				bind:settings={paginationSettings}
-				showFirstLastButtons="{false}"
-				showPreviousNextButtons="{true}" showNumerals
-				maxNumerals={2}></Paginator>
 	</div>
-</div>
-<div class="h-8"></div>
+
+	<div class="card mt-40 ml-10 mr-10 mb-10 bg-primary-500 relative">
+		<dl class="list-dl bg-secondary-500 rounded-md m-32 mt-9 absolute">
+			{#each callerData as caller}
+				<!-- content here -->
+				<div>
+					<span class="badge"><Avatar width="w-14" initials={caller.name} background="bg-primary-500" fill="bg-secondary-500"/></span>
+					<span class="flex-auto">
+						<dt><h3 class="h3 font-bold">{caller.name}</h3></dt>
+						<dd>{caller.address}</dd>
+					</span>
+					<div class="Call-Div">
+						<img src="assets/call.svg" class="cursor-pointer" alt="call" />
+						<img src="assets/video.svg" class="cursor-pointer" alt="videocall" />
+						<img src="assets/message.svg" class="cursor-pointer" alt="videocall" />
+					</div>
+				</div>
+			{/each}
+		</dl>
+	</div>
+	<!-- Responsive Container (recommended) -->
+	<div class="table-container w-11/12 text-black mt-10 mb-20 ml-16 mr-5">
+		<!-- Native Table Element -->
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Name</th>
+					<th>Reason</th>
+					<th>Address</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				{#each patientHistory as row}
+					<tr>
+						<td>{row.date}</td>
+						<td>{row.name}</td>
+						<td>{row.reason}</td>
+						<td>{row.address}</td>
+						<td>{row.status}</td>
+					</tr>
+				{/each}
+			</tbody>
+		</table>
+		<div class="paginator mt-6">
+			<Paginator
+				bind:settings={paginationSettings}
+				showFirstLastButtons={false}
+				showPreviousNextButtons={true}
+				showNumerals
+				maxNumerals={2}
+			/>
+		</div>
+	</div>
+	<div class="h-8" />
 </div>
 
 <style>
 	.name {
-		font-size : 48px;
-		font-weight : 700;
+		font-size: 48px;
+		font-weight: 700;
 	}
-	.patient-details{
+	.patient-details {
 		font-size: 16px;
-		font-weight:500;
+		font-weight: 500;
 		color: black;
 	}
 	.Profile-Div {
-		display : flex;
-		flex-direction : row;
+		display: flex;
+		flex-direction: row;
 		align-items: center;
-		position : absolute;
-		left : 80px;
-		top : 135px;
-	}
-	
-	.Profile-Inner-Div{
-		display:flex;
-		flex-direction:column;
-		align-items:left;
-		padding : 10px 20px;
+		position: absolute;
+		left: 80px;
+		top: 135px;
 	}
 
-	.name{
-		padding : 20px 0px;
+	.Profile-Inner-Div {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		padding: 10px 20px;
 	}
-	
+
+	.name {
+		padding: 20px 0px;
+	}
+
 	.banner {
-		position : relative;
+		position: relative;
 	}
 
 	.card {
-		height : 310px;
-		padding-top : 90px;
-		display : flex;
-		flex-direction : column;
-		align-items : center;
+		height: 310px;
+		padding-top: 90px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		justify-content: center;
 	}
 
 	.list-dl {
-		width : 95%;
-		border-radius : 20px;
+		width: 95%;
+		border-radius: 20px;
 	}
 
 	.Call-Div {
-		padding : 0px 20px;
+		padding: 0px 20px;
 	}
 	td {
 		font-size: xx-large;

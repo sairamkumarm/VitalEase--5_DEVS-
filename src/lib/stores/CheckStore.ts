@@ -1,4 +1,4 @@
 import { writable, type Writable } from 'svelte/store';
 
-const CheckStore: Writable<boolean> = writable(false);
+const CheckStore: Writable<{val: string}> = writable({val: "/"});
 export default CheckStore;
