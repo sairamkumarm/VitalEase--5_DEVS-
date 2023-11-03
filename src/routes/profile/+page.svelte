@@ -94,7 +94,7 @@
 	];
 </script>
 
-<div class="w-screen ctinr bg-white text-white">
+<div class="w-screen ctinr text-white">
 	<div class="w-screen banner relative h-52 bg-secondary-500">
 		<div class="fixed top-0 right-0 left-0 bg-secondary-500 h-16 z-10" />
 		<div class="Profile-Div">
@@ -168,6 +168,9 @@
 </div>
 
 <style>
+	.ctinr {
+		background-color: #f0e5e5;
+	}
 	.name {
 		font-size: 48px;
 		font-weight: 700;
