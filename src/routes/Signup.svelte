@@ -31,12 +31,18 @@
 				<input class="input" type="tel" placeholder="Phone Number" />
 			</label>
 			<div class="otp h-12 flex px-6 gap-2">
-				<button class="btn  text-white rounded-lg h-12 bg-slate-900">Request OTP</button>
+				<button type="button" class="btn text-white rounded-lg h-12 bg-slate-900"
+					>Request OTP</button
+				>
 				<input class="input" bind:value={otp} type="text" placeholder="OTP" />
-				<button class="btn variant-filled-secondary">{otp ? 'Verify' : 'Resend'}</button>
+				<button type="button" class="btn variant-filled-secondary"
+					>{otp ? 'Verify' : 'Resend'}</button
+				>
 			</div>
-			<button type="submit" class="btn text-white  bg-blue-700 rounded-sm mt-7 h-14 w-40" on:click={handleClick}
-				>Register</button
+			<button
+				type="submit"
+				class="btn text-white bg-blue-700 rounded-sm mt-7 h-14 w-40"
+				on:click={handleClick}>Register</button
 			>
 		</div>
 		<div class="divider" />
@@ -51,14 +57,18 @@
 				<span>Phone number</span>
 				<input class="input" type="tel" placeholder="Phone Number" />
 			</label>
-            <div class="otp h-12 flex px-6 gap-2">
-				<button class="btn  text-white rounded-lg h-12 bg-slate-900">Request OTP</button>
+			<div class="otp h-12 flex px-6 gap-2">
+				<button type="button" class="btn text-white rounded-lg h-12 bg-slate-900"
+					>Request OTP</button
+				>
 				<input class="input" bind:value={otp1} type="text" placeholder="OTP" />
-				<button class="btn variant-filled-secondary">{otp1 ? 'Verify' : 'Resend'}</button>
+				<button type="button" class="btn variant-filled-secondary"
+					>{otp1 ? 'Verify' : 'Resend'}</button
+				>
 			</div>
 			<button
 				type="submit"
-				class="btn variant-filled-primary rounded-sm mt-10 h-14 w-40 text-white "
+				class="btn variant-filled-primary rounded-sm mt-10 h-14 w-40 text-white"
 				on:click={parent.onClose}>Login</button
 			>
 		</div>

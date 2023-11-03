@@ -21,11 +21,10 @@ function toggle(symptom: string): void {
 	symptoms[symptom] = !symptoms[symptom];
 }
 
-
 </script>
 
 
-<div class="w-screen ctinr h-screen text-white">
+<div class="w-screen ctinr h-screen ">
 	<div class="w-screen banner relative h-16 ">
 		<div class="top-bg fixed top-0 right-0 left-0  h-16 z-10" />
 	</div>
@@ -57,12 +56,13 @@ function toggle(symptom: string): void {
         <div class="chips">
             
             {#each Object.keys(symptoms) as s}
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
             <span
-                class="chip {symptoms[s] ? 'variant-filled' : 'variant-soft-error'} rounded-full border-solid border-error-500 border-2"
+                class="chip {symptoms[s] ? 'variant-filled-secondary' : 'variant-soft-error'} {symptoms[s] ? 'text-white' : 'text-black'} text-lg  rounded-full border-solid border-error-500 border-2"
                 on:click={() => { toggle(s); }}
                 on:keypress
             >
-                {#if symptoms[s]}<span>✔</span>{/if}
+                <!-- {#if symptoms[s]}<span>✔</span>{/if} -->
                 <span class="capitalize">{s}</span>
             </span>
             {/each}
@@ -134,7 +134,6 @@ function toggle(symptom: string): void {
         color: #3a4468;
     }
     span {
-        color: white;
         margin: 10px;   
         max-width: 250px;
     }

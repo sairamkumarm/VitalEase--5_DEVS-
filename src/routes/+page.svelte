@@ -58,10 +58,10 @@
 	<div class="hero-container h-screen pt-16 pr-6 pl-6">
 		<div class="hero text-white absolute bottom-40 left-28">
 			<div class="hero-text-container">
-				<div class="hero-title h2 w-72 capitalize">
+				<div class="hero-title h1  w-96 capitalize">
 					A Healthier And More Connected Future For All
 				</div>
-				<div class="hero-subtitle h5 w-96 mb-2">
+				<div class="hero-subtitle h4 w-[400px] mb-2">
 					Our mission is to enhance accessibility, affordability and overall quality of healthcare
 				</div>
 				<div class="hero-buttons flex gap-5">
