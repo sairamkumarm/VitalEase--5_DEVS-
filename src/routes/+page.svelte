@@ -58,7 +58,7 @@
 	<div class="hero-container h-screen pt-16 pr-6 pl-6">
 		<div class="hero text-white absolute bottom-40 left-28">
 			<div class="hero-text-container">
-				<div class="hero-title h1  w-96 capitalize">
+				<div class="hero-title h1 w-96 capitalize">
 					A Healthier And More Connected Future For All
 				</div>
 				<div class="hero-subtitle h4 w-[400px] mb-2">
@@ -134,15 +134,21 @@
 		</div>
 	</div>
 	<div class="faq-container-wrapper flex flex-col p-12 mt-72 mb-72 items-center">
-		<div class="faq-container bg-[#828CAE]/20 flex flex-col gap-8 items-center rounded-xl p-12 max-w-[1200px]">
-			<Accordion autocollapse >
-				<AccordionItem open >
-					<svelte:fragment slot="summary"><p class="font-bold">{faq[0].question}</p></svelte:fragment>
+		<div
+			class="faq-container bg-[#828CAE]/20 flex flex-col gap-8 items-center rounded-xl p-12 max-w-[1200px]"
+		>
+			<Accordion autocollapse>
+				<AccordionItem open>
+					<svelte:fragment slot="summary"
+						><p class="font-bold">{faq[0].question}</p></svelte:fragment
+					>
 					<svelte:fragment slot="content">{faq[0].answer}</svelte:fragment>
 				</AccordionItem>
 				{#each faq.slice(1) as item}
 					<AccordionItem>
-						<svelte:fragment slot="summary"><p class="font-bold">{item.question}</p></svelte:fragment>
+						<svelte:fragment slot="summary"
+							><p class="font-bold">{item.question}</p></svelte:fragment
+						>
 						<svelte:fragment slot="content">{item.answer}</svelte:fragment>
 					</AccordionItem>
 				{/each}
@@ -174,7 +180,7 @@
 </main>
 
 <style>
-	.hero-container {
+	/* .hero-container {
 		background: linear-gradient(
 				75deg,
 				#000 1.37%,
@@ -184,17 +190,42 @@
 				rgba(0, 0, 0, 0) 100%,
 				rgba(0, 0, 0, 0.12) 100%
 			),
-			url('assets/kaipudi.jpg'), lightgray 50%;
+			url('assets/kaipudi.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
+	} */
+	.hero-container {
+		background: linear-gradient(
+			75deg,
+			#000 1.37%,
+			rgba(0, 0, 0, 0.98) 15.48%,
+			rgba(0, 0, 0, 0.91) 39.75%,
+			rgba(0, 0, 0, 0.09) 99.99%,
+			rgba(0, 0, 0, 0.12) 100%
+			), url(kaipudi.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	.hero-container::after {
+		content: '';
+		z-index: 50;
+		background: linear-gradient(
+			75deg,
+			#000 1.37%,
+			rgba(0, 0, 0, 0.98) 15.48%,
+			rgba(0, 0, 0, 0.91) 39.75%,
+			rgba(0, 0, 0, 0.09) 99.99%,
+			rgba(0, 0, 0, 0.12) 100%
+		);
 	}
 	.doctor-search-container-wrapper::after {
 		content: ' ';
 		background-color: #0fb880;
 		position: absolute;
 		inset: 0;
-		z-index: -1;
+		z-index: -2;
 		transform: skewY(10deg);
 	}
 	.review-container-wrapper::after {
