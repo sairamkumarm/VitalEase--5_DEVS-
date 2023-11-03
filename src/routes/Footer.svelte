@@ -48,7 +48,7 @@
 						Follow us :
 					</p>
 					<div class="Social-media-links">
-						<img src="assets/socialmedia.svg" alt="socialMediaLinks">
+						<img src="assets/socialmedia.svg" alt="socialMediaLinks" style="cursor: pointer;">
 					</div>
 				</div>
 				<div class="details text-white">
@@ -57,7 +57,7 @@
 					{/each}
 					<p style="display: flex; text-align: start; padding-left: 0;">Download App :</p>
 					<div class="Socail-media-links">
-						<img src="assets/stores.svg" alt="downloadLinks">
+						<img src="assets/stores.svg" style="cursor: pointer;" alt="downloadLinks">
 					</div>
 				</div>
 			</div>

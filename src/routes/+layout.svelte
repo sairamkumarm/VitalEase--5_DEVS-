@@ -32,5 +32,5 @@
 {#if botActive}
 	<Chatbot/>
 {/if}
-<div class="bot" on:click={handleClick}><img src="assets/chatbot.svg" class="fixed -bottom-4 -right-5" alt="chatbot image"></div> 
+<div class="bot" on:click={handleClick}><img src="assets/chatbot.svg" class="fixed -bottom-4 -right-5" alt="chatbot image" style="cursor: pointer;"></div> 
 <Footer />
