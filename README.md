@@ -1,5 +1,10 @@
 # VitalEase — A UI/UX project on a Telemedicine company
 
+[![R](https://img.shields.io/badge/%20WEBSITE%20LINK-0FB880?style=for-the-badge)](https://vitalease-5-devs.tiiny.site)
+[![R](https://img.shields.io/badge/%20FIGMA%20DESIGN-blue?style=for-the-badge)](https://www.figma.com/file/ASL6X0B0ai9julycBlWG3D/Designs?type=design&node-id=1202%3A133&mode=design&t=PggMCqiIi8ccPyuR-1)
+[![R](https://img.shields.io/badge/%20FIGMA%20PROTOTYPE-orange?style=for-the-badge)](https://www.figma.com/proto/ASL6X0B0ai9julycBlWG3D/Designs?type=design&node-id=1281-157&t=zxKPs7YIcuyCzx5S-0&scaling=scale-down&page-id=1202%3A133&starting-point-node-id=1281%3A157)
+[![R](https://img.shields.io/badge/%20USER%20FLOW%20DIAGRAM-purple?style=for-the-badge)](https://app.flowmapp.com/share/projects/11be235f-f6e3-4fa0-88f5-6127af1a72b3/userflow/8e3ebf9e-5309-4f20-8373-c445f61420f9)
+
 Created by 5_DEVS, a team consisting of, well … 5 devs 
 
  - [Sairamkumar M](https://github.com/sairamkumarm)
@@ -7,6 +12,7 @@ Created by 5_DEVS, a team consisting of, well … 5 devs
  - [Vanamuthu V](https://github.com/vanamuthuV)
  - [Shashmith S](https://github.com/Code-4Al)
  - [Tenzin Tsering](https://github.com/tentse)
+
 
 ## Introduction
 
@@ -50,8 +56,8 @@ The website has been created with elderly users in mind, that means
 ## Links
 |Resource| Link |
 |--|--|
-| Designs and wireframes | [![\[](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/cdcf1503-5d77-4197-8ef2-d4ecdc06039e)](https://www.figma.com/proto/ASL6X0B0ai9julycBlWG3D/Designs?node-id=1281-157&scaling=scale-down&page-id=1202:133&starting-point-node-id=1281:157&mode=design&t=JwYUw3ZGOojbpHeY-1) |
-| User flow diagram | [![flowmapp-seeklogo com](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/802cca8b-219f-48d5-9dab-46a7c351e0c8)](https://app.flowmapp.com/share/projects/11be235f-f6e3-4fa0-88f5-6127af1a72b3/userflow/8e3ebf9e-5309-4f20-8373-c445f61420f9)
-|Figma Prototype |[![Figma (1)](https://github.com/sairamkumarm/VitalEase--5_DEVS-/assets/88662373/cdcf1503-5d77-4197-8ef2-d4ecdc06039e)](https://www.figma.com/file/ASL6X0B0ai9julycBlWG3D/Designs?type=design&node-id=1281:157&mode=design&t=n57fy1Dzhhmim9Sq-1)|
+| Designs and wireframes | [![R](https://img.shields.io/badge/%20FIGMA%20DESIGN-blue?style=for-the-badge)](https://www.figma.com/file/ASL6X0B0ai9julycBlWG3D/Designs?type=design&node-id=1202%3A133&mode=design&t=PggMCqiIi8ccPyuR-1)|
+| User flow diagram |[![R](https://img.shields.io/badge/%20USER%20FLOW%20DIAGRAM-purple?style=for-the-badge)](https://app.flowmapp.com/share/projects/11be235f-f6e3-4fa0-88f5-6127af1a72b3/userflow/8e3ebf9e-5309-4f20-8373-c445f61420f9) |
+|Figma Prototype | [![R](https://img.shields.io/badge/%20FIGMA%20PROTOTYPE-orange?style=for-the-badge)](https://www.figma.com/proto/ASL6X0B0ai9julycBlWG3D/Designs?type=design&node-id=1281-157&t=zxKPs7YIcuyCzx5S-0&scaling=scale-down&page-id=1202%3A133&starting-point-node-id=1281%3A157)|
 
 # Thank you for visiting
