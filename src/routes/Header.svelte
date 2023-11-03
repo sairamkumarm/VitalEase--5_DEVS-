@@ -7,8 +7,8 @@
 	import type { ModalSettings, ModalComponent, ModalStore } from '@skeletonlabs/skeleton';
 	import { page } from '$app/stores';
 	import CheckStore from '$lib/stores/CheckStore';					
-	import { goto } from '$app/navigation';
 
+	let currentId: string = "";
 	initializeStores();
 	const modalStore = getModalStore();
 	const modalRegistry: Record<string, ModalComponent> = {
@@ -26,7 +26,7 @@
 		if($page.route.id === "/"){
 			modalStore.trigger(modal);
 		}else {
-			goto(id);
+			currentId = id;
 		}	
 }
 	
@@ -42,10 +42,10 @@
 		</div>
 		<div class="action-container text-white flex justify-between items-center gap-5">
 			<a href="/" class="btn" on:click={ () => handleClick("/")}>Home</a>
-			<a href=" " class="btn" on:click={() => handleClick("/dashboard")}>Dashboard</a>
+			<a href={currentId} class="btn" on:click={() => handleClick("/dashboard")}>Dashboard</a>
 			<a href="#bottom" class="btn" >About</a>
-			<a href=" " class="btn variant-filled-error" on:click={() => handleClick("/emergency")}>Emergency</a>
-			<a href=" " on:click={() => handleClick("/profile")}>
+			<a href={currentId} class="btn variant-filled-error" on:click={() => handleClick("/emergency")}>Emergency</a>
+			<a href={currentId} on:click={() => handleClick("/profile")}>
                 <Avatar
                     initials="SK"
                     width="w-10"
