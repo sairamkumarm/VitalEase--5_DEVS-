@@ -1,4 +1,4 @@
-# VitalEase — A UI/UX project on a Telemedicine company
+# VitalEase — A UI/UX and DEV project on a Telemedicine company
 
 [![R](https://img.shields.io/badge/%20WEBSITE%20LINK-0FB880?style=for-the-badge)](https://vitalease-5-devs.tiiny.site)
 [![R](https://img.shields.io/badge/%20FIGMA%20DESIGN-blue?style=for-the-badge)](https://www.figma.com/file/ASL6X0B0ai9julycBlWG3D/Designs?type=design&node-id=1202%3A133&mode=design&t=PggMCqiIi8ccPyuR-1)
